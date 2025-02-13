@@ -30,15 +30,24 @@ nav a {
     font-size: 18px;
 }
 
+nav a:visited {
+    color: #660066;
+}
+
 nav a:hover {
     color: white;
-    
+}
+
+nav a:active {
+    background-color: #333;
+    color: white;
 }
 
 
 /* Separate sections */
-section {
-    text-align: center;
+h3 {
+    background-color: #92c0d7;
+    width: fit-content;
 }
 
 /* Main */
