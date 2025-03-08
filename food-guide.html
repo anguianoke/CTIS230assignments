@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NYC Food Guide</title>
     <link rel="stylesheet" href="myStyle.css">
+    <script src="testscript.js" defer></script>
 </head>
 <body>
 
     <header>
         <h1>NYC Food Guide</h1>
         <nav> 
-            <a href="AnguianoAssignment2.html">Itinarary</a>
+            <a href="AnguianoAssignment2.html">Itinerary</a>
             <a href="food-guide.html">Food Guide</a>
             <a href="gallery.html">Photo Gallery</a>
         </nav>
@@ -20,56 +21,69 @@
     <main>
         <p class="intro">Discover the Best Flavors of the City!</p>        
         <br>
-        
-        <h2>🥐 Brooklyn Bites</h2>
-        <ul>
-            <li><a href="https://www.chotemiya.com"> <strong>Chote Mia</strong></a> - Hidden inside the Time Out Market in Dumbo, this Indian street food spot serves up must-try <em>samosa chaat</em> and <em>crispy fried cauliflower</em>.</li>
-            <li><a href="https://www.eatnamkeen.com"> <strong>Namkeen</strong></a> - A <em>Pakistani</em> street food gem famous for <em>fried chicken sandwiches</em> and <em>loaded fries</em>—perfect for a chill vibe.</li>
-            <li><a href="https://www.vineapple.cafe"> <strong>Vineapple</strong></a> - Cozy café with <em>great coffee</em> and an even better breakfast. Ideal for a relaxed morning.</li>
-            <li><a href="https://www.butler-nyc.com"> <strong>Butler</strong></a> - This breakfast spot's iconic <em>Dumbo location</em> offers <em>stunning window views of the Brooklyn Bridge</em>.</li>
-        </ul>
 
-    <br>
-        <h2>🫖 West Village & Beyond</h2>
-        <ul>
-            <li><a href="https://qahwahhouse.com"> <strong>Qahwah house</strong></a> - The infamous <em>Yemeni coffee shop</em>. Try their <em>honeycomb bread</em> paired with the <em>hot adani chai</em> for a comforting treat. (Also in Williamsburg, Brooklyn).</li>
-            <li><a href="https://www.spicymoonnyc.com"> <strong>Spicy Moon</strong></a> - A dream for vegetarians! This spot serves up flavorful <em>vegetarian Chinese dishes</em> with a spicy kick.</li>   
-        </ul>
+        <button id="favoritebutton">Change Favorite Day Color</button>
+        <br>
 
-    <br>
-        <h2>🥮 Chinatown Chow</h2>
-        <ul>
-            <li><strong>Double Crispy Bakery</strong> - Perfect for a quick, affordable bite. Their <em>baked goods</em> and <em>egg tarts</em> are a must-try.</li>
-            <li><a href="https://www.goldendinerny.com"> <strong>Golden Diner</strong></a> - A fusion diner that blends <em>classic American comfort food</em> with <em>Asian influences</em>. Don't miss their <em>honey butter pancakes</em> and <em>egg & cheese sandwich</em>.</li>
-        </ul>
+        <input type="text" id="myinput">
+        <p id="otheritem">This text will change when you type something in the input box.</p>
 
-    <br>
-        <h2>🍣 Upper East Side Eats</h2>
-        <ul>
-            <li><a href="https://www.ikyuny.com"> <strong>Ikyu Sushi</strong></a> - A hidden gem for fresh, <em>high-quality sushi</em> at reasonable prices.</li>
-            <li><a href="https://ilovegoodsugar.com"> <strong>Good Sugar</strong></a> - A cozy spot with <em>healthy desserts</em> and refreshing drinks.</li>
-        </ul>
+        <img src="images/chotemiya.png" id="food-image" alt="Delicious Indian street food from Chote Miya">
 
-    <br> 
-        <h2>🍕 Midtwon & Time Square Munchies</h2>
-            <ul>
-                <li><strong>Shawarma Bay</strong> - A solid halal option serving up <em>juicy shawarmas</em> and <em>delicious platters</em>.</li>
-                <li><a href="https://www.joespizzanyc.com"> <strong>Joe's Pizza</strong></a> - An NYC institution. <em>Classic, no-frills pizza</em> that's a must for any visitor who loves <em>Spider-Man</em>.</li>
-            </ul>
+        <div class="brooklyn-section"></div>
+            <h2 id="secondtest">🥐 Brooklyn Bites</h2>
+                <ul>
+                    <li><a id="firsttest" href="https://www.chotemiya.com"> <strong>Chote Miya</strong></a> - Hidden inside the Time Out Market in Dumbo, this Indian street food spot serves up must-try <em>samosa chaat</em> and <em>crispy fried cauliflower</em>.</li>
+                    <li><a href="https://www.eatnamkeen.com"> <strong>Namkeen</strong></a> - A <em>Pakistani</em> street food gem famous for <em>fried chicken sandwiches</em> and <em>loaded fries</em>—perfect for a chill vibe.</li>
+                    <li><a href="https://www.vineapple.cafe"> <strong>Vineapple</strong></a> - Cozy café with <em>great coffee</em> and an even better breakfast. Ideal for a relaxed morning.</li>
+                    <li><a href="https://www.butler-nyc.com"> <strong>Butler</strong></a> - This breakfast spot's iconic <em>Dumbo location</em> offers <em>stunning window views of the Brooklyn Bridge</em>.</li>
+                </ul>
+        </div>
 
-    <br>
-        <h2>🍚 Jackson Heights Gems</h2>
-            <ul>
-                <li><strong>Nurlan Uyghur Restaurant</strong> - A flavorfull spot offering authentic <em>Uyghur dishes</em>, including <em>laghman</em> and <em>doughy lamb skewers</em>.</li>
-                <li><strong>Maharaja Sweets</strong> - An authentic <em>Indian sweets shop</em> offering <em>delicious mithai</em> and <em>fresh samosas</em>.</li>
-            </ul>  
+        <button id="thebutton">Change Text Color</button>
+        <button id="secondbutton">Change Font Style</button>
 
-    <br>
-        <p class="conclusion">Curious how the trip went?</p>
-        <p class="conclusion"><a href="gallery.html">Check out our NYC Photo Gallery!</a></p>
+        <div class="food-list">
+            <h2>🫖 West Village & Beyond</h2>
+                <ul>
+                    <li id="qahwah"><a href="https://qahwahhouse.com"> <strong>Qahwah house</strong></a> - The infamous <em>Yemeni coffee shop</em>. Try their <em>honeycomb bread</em> paired with the <em>hot adani chai</em> for a comforting treat. (Also in Williamsburg, Brooklyn).</li>
+                    <li><a href="https://www.spicymoonnyc.com"> <strong>Spicy Moon</strong></a> - A dream for vegetarians! This spot serves up flavorful <em>vegetarian Chinese dishes</em> with a spicy kick.</li>   
+                </ul>
 
-        </main>
-    </body>
+            <br>
+            <h2>🥮 Chinatown Chow</h2>
+                <ul>
+                    <li><strong>Double Crispy Bakery</strong> - Perfect for a quick, affordable bite. Their <em>baked goods</em> and <em>egg tarts</em> are a must-try.</li>
+                    <li><a href="https://www.goldendinerny.com"> <strong>Golden Diner</strong></a> - A fusion diner that blends <em>classic American comfort food</em> with <em>Asian influences</em>. Don't miss their <em>honey butter pancakes</em> and <em>egg & cheese sandwich</em>.</li>
+                </ul>
+
+            <br>
+            <h2>🍣 Upper East Side Eats</h2>
+                <ul>
+                    <li><a href="https://www.ikyuny.com"> <strong>Ikyu Sushi</strong></a> - A hidden gem for fresh, <em>high-quality sushi</em> at reasonable prices.</li>
+                    <li><a href="https://ilovegoodsugar.com"> <strong>Good Sugar</strong></a> - A cozy spot with <em>healthy desserts</em> and refreshing drinks.</li>
+                </ul>
+
+            <br> 
+            <h2>🍕 Midtwon & Time Square Munchies</h2>
+                <ul>
+                    <li><strong>Shawarma Bay</strong> - A solid halal option serving up <em>juicy shawarmas</em> and <em>delicious platters</em>.</li>
+                    <li><a href="https://www.joespizzanyc.com"> <strong>Joe's Pizza</strong></a> - An NYC institution. <em>Classic, no-frills pizza</em> that's a must for any visitor who loves <em>Spider-Man</em>.</li>
+                </ul>
+
+            <br>
+            <h2>🍚 Jackson Heights Gems</h2>
+                <ul>
+                    <li><strong>Nurlan Uyghur Restaurant</strong> - A flavorfull spot offering authentic <em>Uyghur dishes</em>, including <em>laghman</em> and <em>doughy lamb skewers</em>.</li>
+                    <li><strong>Maharaja Sweets</strong> - An authentic <em>Indian sweets shop</em> offering <em>delicious mithai</em> and <em>fresh samosas</em>.</li>
+                </ul>  
+
+            <br>
+            <p class="conclusion">Curious how the trip went?</p>
+            <p class="conclusion"><a href="gallery.html">Check out our NYC Photo Gallery!</a></p>
+    
+        </div>
+    </main>
 
     <footer>
         <p>Karen Anguiano</p>
@@ -77,4 +91,5 @@
         <p><a href="mailto:karenanguiano890@gmail.com">karenanguiano890@gmail.com</a></p>
     </footer>
 
-    </html>
+</body>
+</html>

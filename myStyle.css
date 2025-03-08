@@ -102,8 +102,16 @@ main {
     padding: 20px;
     max-width: 80%;
     border: 2px solid #b0d5c7;
-    border-radius: 10px;
+    border-radius: 50px;
     background-color: white;
+}
+
+.brooklyn-section {
+    margin: 100px;
+}
+
+.food-list {
+    clear: both;
 }
 
 
@@ -123,7 +131,13 @@ ul li strong {
 }
 
 
-/* Imaages */
+/* Images */
+img {
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+}
+
 .gallery {
     display: flex;
     flex-wrap: wrap;
@@ -132,10 +146,9 @@ ul li strong {
     padding: 20px;
 }
 
-.gallery img {
-    width: 300px;
-    height: auto;
-    border-radius: 8px;
+#food-image {
+    float: right;
+    margin: 50px; /* Add space between text and image */    
 }
 
 
