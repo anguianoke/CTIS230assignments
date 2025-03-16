@@ -152,9 +152,6 @@ img {
 }
 
 
-
-
-
 /* Footer Box Model*/
 footer { 
     text-align: center;
@@ -163,4 +160,38 @@ footer {
     text-align: center; 
     margin-top: 30px; 
     border-top: 2px solid #8bb8a8; 
+}
+
+
+/* media query for tablet size */
+@media (max-width: 768px) {
+    main {
+        max-width: 90%;  /* Allow more space for content on phone */
+        margin: 10px auto;  /* Reduce left/right margins */
+        padding: 15px;
+    }
+}
+
+/* Media query for smart phone size */
+@media (max-width: 480px) {
+    main {
+        max-width: 95%;
+        margin: 5px auto;
+        padding: 10px;
+    }
+}
+
+@media (orientation: portrait) {
+    #food-image {
+        width: 100%;  /*full width in potrait modw*/
+        max-width: 300px;
+        display: block;
+        margin: 20px auto;
+    }
+
+    nav {
+        flex-direction: column;  /* stack the navigation links */
+        text-align: center;
+        gap: 10px;
+    }
 }
