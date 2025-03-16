@@ -148,7 +148,7 @@ img {
 
 #food-image {
     float: right;
-    margin: 50px; /* Add space between text and image */    
+    margin: 50px; /* add space between text and image */    
 }
 
 
@@ -166,8 +166,8 @@ footer {
 /* media query for tablet size */
 @media (max-width: 768px) {
     main {
-        max-width: 90%;  /* Allow more space for content on phone */
-        margin: 10px auto;  /* Reduce left/right margins */
+        max-width: 90%;  /* allow more space for content on phone */
+        margin: 10px auto;  /* reduce the margins on the left and right */
         padding: 15px;
     }
 }
@@ -200,14 +200,14 @@ footer {
 /* Media Query for when in landscape mode */
 @media (orientation: landscape) {
     #food-image {
-        width: 50%;  
-        max-width: 250px;
-        float: right; /* make sure it stays aligned to the right */
-        margin: 20px;
+        width: 100%; 
+        max-width: 250px;  
+        float: right;  /* keep image aligned to the right */
+        margin: 20px;  /* keep the spacing */
     }
 
     nav {
-        flex-direction: row;  /* Keepa the layout horizontal */
+        flex-direction: row;  /* keep the layout horizontal */
         justify-content: space-evenly;
     }
 }
