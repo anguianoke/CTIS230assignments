@@ -181,6 +181,7 @@ footer {
     }
 }
 
+/* Media Query for when in potrait mode */
 @media (orientation: portrait) {
     #food-image {
         width: 100%;  /*full width in potrait modw*/
@@ -193,5 +194,20 @@ footer {
         flex-direction: column;  /* stack the navigation links */
         text-align: center;
         gap: 10px;
+    }
+}
+
+/* Media Query for when in landscape mode */
+@media (orientation: landscape) {
+    #food-image {
+        width: 50%;  
+        max-width: 250px;
+        float: right; /* make sure it stays aligned to the right */
+        margin: 20px;
+    }
+
+    nav {
+        flex-direction: row;  /* Keepa the layout horizontal */
+        justify-content: space-evenly;
     }
 }
