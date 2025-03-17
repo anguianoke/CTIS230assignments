@@ -1,25 +1,40 @@
-// Step 1
+// RWD - expanding image
+var images = document.querySelectorAll('.gallery img'); //selects all the images in gallery
+
+// Click event listener for each image in gallery
+for (var i = 0; i < images.length; i++) {
+    images[i].addEventListener('click', function() {
+        if (this.style.width === "600px") {  //if its already expanded, shrink it back
+            this.style.width = "300px";
+            this.style.height = "auto"; 
+        } else {
+            this.style.width = "600px";  //otherwise, expand it
+            this.style.height = "auto"; //  aspect ratio
+        }
+    });
+}
+
+// Step 1 
+
 myitem = document.getElementById("firsttest");
 
 myitem.addEventListener("click", onClick);
 
 function onClick() {  
     myitem.style.color = "dark blue";  //color of text changes after click
-
     myitem.style.backgroundColor = "#ecf0f1"; //background color changes after clicked
     myitem.style.fontFamily = "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif"; //font changes after clicked
-    }
+}
 
-//Event listener for the "mouseout" event
+// Event listener for the "mouseout" event
 myitem.addEventListener("mouseout", onMouseOut);
 
 function onMouseOut() { //triggered when mouse moves off the link
-    myitem.style.color = "";    //resetting properties to originial values
+    myitem.style.color = "";    //resetting properties to original values
     myitem.style.backgroundColor = "";
     myitem.style.fontFamily = "";
     myitem.style.transition = ""; //remove transition when mouse is out
 }
-
 
 // Step 2 - Creating first button
 let thebutton = document.getElementById("thebutton");  
@@ -31,7 +46,7 @@ function onButtonClick() {
     otheritem.style.color = "red";  //changes color of the text in the element with id "buttontest" (Namkeen description)
 }
 
-//second button
+// second button
 secondbutton = document.getElementById("secondbutton");
 seconditem = document.getElementById("secondtest");
 
@@ -41,8 +56,6 @@ function onSecondButtonClick() {
     seconditem.style.fontFamily = "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif"; //changes font family of "Brooklyn Bites"
 }
 
-
-
 // Step 3 - Adding Input Box
 textentry = document.getElementById("myinput"); 
 textentry.addEventListener("change", onChange);
@@ -50,9 +63,8 @@ textentry.addEventListener("change", onChange);
 function onChange() {
     newtext = textentry.value; //get text entered by the user 
     otheritem = document.getElementById("otheritem"); //find element where text will be changed
-    otheritem.innerHTML = newtext;     // Changeto the new text
+    otheritem.innerHTML = newtext;     // Change to the new text
 }
-
 
 // Step 4 - Favorite activity button
 favoritebutton = document.getElementById("favoritebutton");  
@@ -63,4 +75,3 @@ favoritebutton.addEventListener("click", onFavoriteButtonClick);
 function onFavoriteButtonClick() {
     qahwahhouse.style.color = "red"; // Changes "Qahwah House" to red
 }
-

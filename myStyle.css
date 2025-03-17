@@ -1,4 +1,3 @@
-
 /* General body style */
 body {  
     font-family: Arial, sans-serif; 
@@ -8,7 +7,6 @@ body {
     color: #333;
 }
 
-
 /* Header */
 header {
     background-color: #b0d5c7;
@@ -17,7 +15,6 @@ header {
     font-size: 24px;
     border-bottom: 2px solid #8bb8a8;
 }
-
 
 /* Navigation links */
 nav {
@@ -58,9 +55,8 @@ header nav a {
     letter-spacing: 1px;
 }
 
-
 /* Headings */
-h1, h2, p { /* Group Selector, Box model */
+h1, h2, p { 
     color: #2c3e50;
     text-align: center;
     font-family: "Playfair Display", serif;
@@ -73,7 +69,6 @@ h4 {
     font-family: "Playfair Display", serif;
     font-size: 18px;
 }
-
 
 /* Class selectors */
 p.intro {
@@ -95,7 +90,6 @@ p.conclusion a:hover {
     text-decoration: underline; 
 }
 
-
 /* Main */
 main {
     margin: 20px auto;
@@ -114,7 +108,6 @@ main {
     clear: both;
 }
 
-
 /* List Styling */
 ul {
     list-style: none;
@@ -130,7 +123,6 @@ ul li strong {
     font-weight: bold;
 }
 
-
 /* Images */
 img {
     width: 300px;
@@ -138,6 +130,7 @@ img {
     border-radius: 8px;
 }
 
+/* Gallery */
 .gallery {
     display: flex;
     flex-wrap: wrap;
@@ -148,8 +141,9 @@ img {
 
 #food-image {
     float: right;
-    margin: 50px; /* add space between text and image */    
+    margin: 50px; 
 }
+
 
 
 /* Footer Box Model*/
@@ -157,17 +151,15 @@ footer {
     text-align: center;
     padding: 100px;
     background: #b0d5c7;
-    text-align: center; 
     margin-top: 30px; 
     border-top: 2px solid #8bb8a8; 
 }
 
-
 /* media query for tablet size */
 @media (max-width: 768px) {
     main {
-        max-width: 90%;  /* allow more space for content on phone */
-        margin: 10px auto;  /* reduce the margins on the left and right */
+        max-width: 90%;
+        margin: 10px auto;
         padding: 15px;
     }
 }
@@ -181,33 +173,33 @@ footer {
     }
 }
 
-/* Media Query for when in potrait mode */
+/* Media Query for when in PORTRAIT mode */
 @media (orientation: portrait) {
     #food-image {
-        width: 100%;  /*full width in potrait modw*/
+        width: 100%; 
         max-width: 300px;
         display: block;
         margin: 20px auto;
     }
 
     nav {
-        flex-direction: column;  /* stack the navigation links */
+        flex-direction: column;  
         text-align: center;
         gap: 10px;
     }
 }
 
-/* Media Query for when in landscape mode */
+/* Media Query for when in LANDSCAPE mode */
 @media (orientation: landscape) {
     #food-image {
         width: 100%; 
         max-width: 250px;  
-        float: right;  /* keep image aligned to the right */
-        margin: 20px;  /* keep the spacing */
+        float: right;
+        margin: 20px; 
     }
 
     nav {
-        flex-direction: row;  /* keep the layout horizontal */
+        flex-direction: row;  
         justify-content: space-evenly;
     }
 }
